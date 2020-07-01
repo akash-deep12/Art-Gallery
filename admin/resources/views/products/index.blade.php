@@ -89,7 +89,7 @@
 						        </div>
 						        <div class="col-xs-12 col-sm-12 col-md-12">
 						                <div class="form-group">
-						                    <strong>Role</strong>
+						                    <strong>Artist</strong>
 						                      <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="artist">
 						                      	@foreach ($users as $user)
 						                        <option value="{{ $user->name }}">{{ $user->name }}</option>

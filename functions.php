@@ -50,7 +50,7 @@ require_once("dbconnection/db.php");
 			$namea = mysqli_fetch_array($name);
 			$highname = $namea['name'];
 			echo "<div class='prod_box mt-3'>";
-				echo"<span class='expiring text-danger ml-3'>Expiring in</span>";
+				echo"<span class='expiring text-danger ml-2'>Expiring in</span>";
 				echo "<div class='timer text-dark ml-2 mt-1'data-countdown=".$row['due_date'].">";?>
 				<script type="text/javascript">
 							$('[data-countdown]').each(function() {
@@ -61,7 +61,7 @@ require_once("dbconnection/db.php");
 								});
 								</script><?php echo"</div>";
 				echo "<div class='center_prod_box'>";
-					echo "<div class='product_img'><a href='details.php?id=".$row['product_id']."'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='180' height='180' alt='' border='0'/></a></div>";
+					echo "<div class='product_img'><a href='details.php?id=".$row['product_id']."'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='230' height='180' alt='' border='0'/></a></div>";
 					echo "<div class='product_title'><a href='details.php?id=".$row['product_id']."'>".$row['prod_name']."</a></div>";
 					echo "<div class='prod_price'><span class='start-bid'>Artist: </span> <span class='price text-info'>".$row['artist']."</span><br/>
 					<span class='start-bid'>Start Bid at: </span> <span class='price text-info'>$".$row['starting_bid']."</span><br />
@@ -134,7 +134,7 @@ function logform(){
 			$namea = mysqli_fetch_array($name);
 			$highname = $namea['name'];
 			echo "<div class='prod_box mt-3'>";
-			echo"<span class='expiring text-danger ml-3'>Expiring in</span>";
+			echo"<span class='expiring text-danger ml-2'>Expiring in</span>";
 				echo"<div class='timer text-dark ml-2 mt-1'data-countdown=".$row['due_date'].">";?>
 						<script type="text/javascript">
 							$('[data-countdown]').each(function() {
@@ -145,7 +145,7 @@ function logform(){
 								});
 								</script><?php echo"</div>";
 					echo "<div class='center_prod_box'>";
-					echo "<div class='product_img'><a href='details.php?id=".$row['product_id']."'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='180' height='180' alt='' border='0'/></a></div>";
+					echo "<div class='product_img'><a href='details.php?id=".$row['product_id']."'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='230' height='180' alt='' border='0'/></a></div>";
 					echo "<div class='product_title'><a href='details.php?id=".$row['product_id']."'>".$row['prod_name']."</a></div>";
 					echo "<div class='prod_price'><span class='start-bid'>Artist: </span> <span class='price text-info'>".$row['artist']."</span><br />
 					<span class='start-bid'>Start Bid at: </span> <span class='price text-info'>$".$row['starting_bid']."</span><br />

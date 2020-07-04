@@ -385,11 +385,11 @@ color: white;
 }
 span.expiring{
   float: left;
-  font-size: 20px;
+  font-size: 19px;
 }
 .timer{
   float: left;
-  font-size: 16px;
+  font-size: 15px;
 }
 /* ----------------------------------Artist Area Starts*/
 .artist_box{

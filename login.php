@@ -1,8 +1,7 @@
 <?php
 session_start();
 
-require_once "dbconnection/db.php";
- include("header/header.php");
+require_once ("dbconnection/db.php");
 
 if(isset($_SESSION['user_id'])!="") {
     header("Location: dashboard.php");
@@ -45,16 +44,16 @@ if (isset($_POST['login'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Art Gallary Log In</title>
+    <title>Art Gallery </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-   
+   <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-lg-8 offset-2">
                 <div class="page-header">
-                    <h2><center>Log in to Art Gallary</center></h2>
+                    <h2><center>Log in to Art Gallery</center></h2>
                     <?php if (isset($_SESSION['registred'])) {?>
                         <div class="alert alert-success" role="alert">
                             <h4 class="alert-heading">Well done!</h4>

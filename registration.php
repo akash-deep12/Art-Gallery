@@ -1,6 +1,6 @@
 <?php
   require_once "dbconnection/db.php";
-    include_once("header/header.php");
+
   session_start();
   if(isset($_SESSION['user_id'])!="") {
     header("Location: dashboard.php");
@@ -60,16 +60,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Art Gallary Sign Up</title>
+    <title>Art Gallery </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    
+    <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-lg-8 offset-2">
                 <div class="page-header">
-                    <h2><center>Sign up to Art Gallary</center></h2>
+                    <h2><center>Sign up to Art Gallery</center></h2>
                 </div>
                  <?php if (isset($database_error)) {
                     echo"<p class='text-danger'>".$database_error."</p>";

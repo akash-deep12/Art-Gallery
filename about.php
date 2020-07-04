@@ -1,7 +1,5 @@
 <?php
-session_start();
- include('header/header.php');
- ?>
+session_start(); ?>
  <!DOCTYPE html>
  <html>
  <head>
@@ -10,6 +8,7 @@ session_start();
 		
  </head>
  <body>
+ <?php include_once("header/header.php"); ?>
  	<p class="h1 text-center mt-5 mb-3">About Us</p>
  	<div class="container border mt-4 p-4">
  		

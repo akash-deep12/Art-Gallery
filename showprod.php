@@ -1,14 +1,14 @@
 <?php require_once("functions.php");
-include_once("header/header.php"); ?>
+ ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Art Gallary</title>
+		<title>Art Gallery</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="js/jquery.countdown.min.js"></script>
 	</head>
 	<body>
-		
+		<?php include_once("header/header.php"); ?>
 		<div class="container">
 			<div class="row">
 				<div class="left-container col-lg-3 mt-3">

@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Art Gallary</title>
+    <title>Art Gallery</title>
 </head>
 <body>
    

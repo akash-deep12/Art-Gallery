@@ -1,6 +1,5 @@
 <?php session_start();
 require_once("dbconnection/db.php");
-include_once("header/header.php"); 
 require('class/artist.php');
 
         if (isset($_POST['submit'])) {
@@ -41,11 +40,12 @@ require('class/artist.php');
 <!DOCTYPE>
 <html>
 <head>
-	<title></title>
+	<title>Art Gallery</title>
 	<link rel="stylesheet" href="css/style.css"/>
   <script src="js/jquery.countdown.min.js"></script>
 </head>
 <body>
+<?php include_once("header/header.php");  ?>
 	<div class="container">
 		
 		<?php if (empty($_SESSION) or $_SESSION['account_type']=='Buyer'){?>

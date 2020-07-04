@@ -1,6 +1,4 @@
-<?php require_once("functions.php");
-require_once("header/header.php");
-?>
+<?php require_once("functions.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,6 +14,7 @@ require_once("header/header.php");
 		</script>
 	</head>
 	<body>
+	<?php include_once("header/header.php"); ?>
 		<div class="container mb-3">
 			<div class="row">
 				<div class="left-container col-lg-3 mt-3">

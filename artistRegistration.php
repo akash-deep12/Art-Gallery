@@ -2,7 +2,9 @@
   require_once("dbconnection/db.php");
   session_start();
   if(isset($_SESSION['user_id'])!="") {
-    header("Location: dashboard.php");
+    echo"<script type='text/javascript'>
+    window.location.href = 'dashboard.php';
+   </script>";
   }
 
     if (isset($_POST['signup'])) {
@@ -45,7 +47,9 @@
             if($sql=mysqli_query($conn, "INSERT INTO login (name, password, email, mobile,address,account_type,image) VALUES('" . $name . "', '" .$password. "', '" .  $email  . "', '" . $mobile . "','" . $address . "','Artist','".$file."')")) {
                   move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$file);
                 $_SESSION['registred']='Yes';
-             header("location: artistLogin.php");
+                echo"<script type='text/javascript'>
+                window.location.href = 'artistLogin.php';
+               </script>";
 
              exit();
             } else {
@@ -66,7 +70,7 @@
   <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col">
                 <div class="page-header">
                     <h2><center>Sign up as Artist</center></h2>
                 </div>

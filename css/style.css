@@ -251,7 +251,7 @@ border:1px solid black;
 width:270px;height: auto;float:left; text-align:center;padding:0px; margin:0px;
 }
 .prod_details_tab{
-width:249px;
+width:249px!important;
 height:31px;
 float:left;
 background-color: black;

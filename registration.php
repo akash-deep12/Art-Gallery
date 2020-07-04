@@ -68,7 +68,7 @@
     <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col">
                 <div class="page-header">
                     <h2><center>Sign up to Art Gallery</center></h2>
                 </div>

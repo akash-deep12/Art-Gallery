@@ -45,6 +45,7 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Art Gallery Login </title>
@@ -54,7 +55,7 @@ if (isset($_POST['login'])) {
    <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col">
                 <div class="page-header">
                     <h2><center>Log in to Art Gallery</center></h2>
                     <?php if (isset($_SESSION['registred'])) {?>

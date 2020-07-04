@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Art Gallary</title>
+		<title>Art Gallery</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		
 		<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>

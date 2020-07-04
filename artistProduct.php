@@ -4,7 +4,7 @@ include_once('class/artist.php');?>
 <!DOCTYPE>
 <html>
 <head>
-	<title></title>
+	<title>Art Gallery</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script src="js/jquery.countdown.min.js"></script>
 </head>

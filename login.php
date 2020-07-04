@@ -4,7 +4,9 @@ session_start();
 require_once ("dbconnection/db.php");
 
 if(isset($_SESSION['user_id'])!="") {
-    header("Location: dashboard.php");
+   echo"<script type='text/javascript'>
+   window.location.href = 'dashboard.php';
+   </script>";
 }
 
 if (isset($_POST['login'])) {
@@ -34,17 +36,18 @@ if (isset($_POST['login'])) {
             $_SESSION['user_address'] =$row['address'];
             $_SESSION['account_type'] = $row['account_type'];
             $_SESSION['item_acquired'] =0;
-            header("Location: dashboard.php");
+            echo"<script type='text/javascript'>
+                window.location.href = 'dashboard.php';
+                </script>";
         } 
     }
    
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Art Gallery </title>
+    <title>Art Gallery Login </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>

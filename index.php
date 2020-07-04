@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Aarti </title>
+		<title>Art Gallery</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	</head>

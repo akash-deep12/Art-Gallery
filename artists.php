@@ -36,18 +36,15 @@ require('class/artist.php');
 
         }
 ?>
-
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
 <head>
 	<title>Art Gallery</title>
 	<link rel="stylesheet" href="css/style.css"/>
   <script src="js/jquery.countdown.min.js"></script>
 </head>
 <body>
-<?php include_once("header/header.php");  ?>
+<?php include_once("header/header.php");?>
 	<div class="container">
-		
 		<?php if (empty($_SESSION) or $_SESSION['account_type']=='Buyer'){?>
 			<div class="row    mt-3">
 						<a href="" class="list-group-item list-group-item-action list-group-item-secondary active disabled text-center" tabindex="-1" aria-disabled="true"  ><h4>Artists</h4></a>
@@ -63,8 +60,7 @@ require('class/artist.php');
     <p class="card-text mt-1">If you don't have an account click to register</p>
     <a href="artistRegistration.php" class="card-link text-secondary"> <button type="button" class="btn btn-secondary">Register</button></br></br></br></br></a>
   </div>
-</div>
-				
+</div>	
 			
 			</div>
 			<?php $art= new artist();

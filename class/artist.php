@@ -5,7 +5,7 @@ class artist{
 		$sql="SELECT * FROM login WHERE account_type = 'Artist'";
 		$result= $conn->query($sql);
 		while($row= mysqli_fetch_array($result)){
-			echo "<div class='artist_box mt-3'>";
+			echo "<div class='artist_box mt-3 col col-lg-3 col-md-5 col-sm-12'>";
 					echo "<a href='artistProduct.php?name=".$row['name']."'><div class='artist_img text-center'><img class='rounded'width='200' height='250' src='admin/public/images/".$row['image']."'";echo"<br></div>";
 					echo "<div class='artist_name text-center text-info'>".$row['name']."</div></a>";
 					echo "<div class='artist_mobile text-center'>Mobile: <span class='artist_email1 text-info'>".$row['mobile']."</span></div>";

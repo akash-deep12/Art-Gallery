@@ -3,7 +3,9 @@ session_start();
 require_once ("dbconnection/db.php");
 
 if(isset($_SESSION['user_id'])!="") {
-    header("Location: dashboard.php");
+    echo"<script type='text/javascript'>
+    window.location.href = 'dashboard.php';
+   </script>";
 }
 
 if (isset($_POST['login'])) {
@@ -33,7 +35,9 @@ if (isset($_POST['login'])) {
             $_SESSION['user_address'] =$row['address'];
             $_SESSION['account_type'] = $row['account_type'];
             $_SESSION['item_acquired']=0;
-            header("Location: artists.php");
+            echo"<script type='text/javascript'>
+            window.location.href = 'artists.php';
+            </script>";
         } 
     }
     }
@@ -49,7 +53,7 @@ if (isset($_POST['login'])) {
    <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col">
                 <div class="page-header">
                     <h2><center>Log in as Artist</center></h2>
                     <?php if (isset($_SESSION['registred'])) {?>

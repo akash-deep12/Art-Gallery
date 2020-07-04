@@ -1,11 +1,11 @@
-<?php
-  require_once "dbconnection/db.php";
-
-  session_start();
+<?php session_start();
+  require_once ("dbconnection/db.php");
   if(isset($_SESSION['user_id'])!="") {
-    header("Location: dashboard.php");
+    echo"<script type='text/javascript'>
+    window.location.href = 'dashboard.php';
+   </script>";
   }
-
+  
     if (isset($_POST['signup'])) {
         $name = mysqli_real_escape_string($conn, $_POST['name']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -46,8 +46,9 @@
             if($sql=mysqli_query($conn, "INSERT INTO login (name, password, email, mobile,address,account_type,image) VALUES('" . $name . "', '" . $password . "', '" .  $email  . "', '" . $mobile . "','" . $address . "','Buyer','".$file."')")) {
                  move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$file);
                 $_SESSION['registred']='Yes';
-             header("location: login.php");
-
+            echo"<script type='text/javascript'>
+            window.location.href = 'login.php';
+            </script>";
              exit();
             } else {
                 $database_error= $sql . "" . mysqli_error($conn);
@@ -67,7 +68,7 @@
     <?php include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col">
                 <div class="page-header">
                     <h2><center>Sign up to Art Gallery</center></h2>
                 </div>

@@ -5,10 +5,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 		<script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
 
-
 		<!-- Logo Area Starts -->
 		<div class="container"id="logo">
-			<a class="navbar-brand-center" href="#"><center><img class="img-fluid mt-3"src="admin/public/images/logo.jpeg"></center></a>
+			<a class="navbar-brand-center" href="index.php"><center><img class="img-fluid mt-3"src="admin/public/images/logo.jpeg"></center></a>
 		</div>
 		<!-- Logo Area Ends -->
 		<!-- Nav Area Start -->
@@ -37,7 +36,6 @@
 						<a class="nav-link" href="login.php"><?php if(isset($_SESSION['user_name']))echo"ACCOUNT";else echo"LOGIN"?></a>
 					</li>
 				</ul>
-			</div>
-			
+			</div>	
 		</nav>
 		<!-- Nav Area Ends -->

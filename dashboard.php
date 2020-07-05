@@ -20,7 +20,7 @@
  
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col-lg-8 col-md-12 col-sm-12">
                 <div class="card">
                       <div class="card-header">
                             <strong>Profile Dashboard</strong>
@@ -33,7 +33,7 @@
                     <p class="card-text">Account Type :- <?php echo $_SESSION['account_type']?></p>
                     <a href="logout.php" class="btn btn-secondary">Logout</a>
                   </div>
-                  <div class="container-fluid">
+                  <div class="container-fluid mb-2">
 	    			<?php 
 
 	    			if (isset($_SESSION['user_id'])) {

@@ -35,7 +35,7 @@
 							<div class="list-group-item list-group-item-action list-group-item-secondary active disabled title-bar">Product Details</div>
 							<div class="container prod_box_big bg-muted">
 									<div class="details_big_box container row">
-										<div class='proddet col-6'>
+										<div class='proddet col-lg-6'>
 											<div class="product_title_big"><strong class="strong">Title: </strong><?php echo $row['prod_name'];?></div><br />
 											<div class="specificationss"> <strong class="strong">Description:</strong> <span class="blue"><?php echo $row['prod_description'];?></span><br /><br />
 											<strong class="strong">Date Added:</strong> <span class="blue"><?php echo $row['date_posted'];?></span><br /><br />
@@ -128,10 +128,10 @@
 			
 								<div class="container col-lg-6  product_img_big">
 									<div class="img_big text-center">	
-										<a title='header=[Click to Bid] body=[&nbsp;] fade=[on]'><img class="img-responsive mt-3 mb-3" src='admin/public/images/<?php echo $row['prod_image'];?>' width='280' height='240' alt='' border='0' /></a>
+										<a title='header=[Click to Bid] body=[&nbsp;] fade=[on]'><img class="img-fluid mt-3 mb-3" src='admin/public/images/<?php echo $row['prod_image'];?>' width='280' height='240' alt='' border='0' /></a>
 									</div>
 										<div class='container bid_border_box'>
-											<div class='bid' style="cursor: pointer;">Click to Bid Now</div>
+											<div class='bid text-responsive' style="cursor: pointer;">Click to Bid Now</div>
 										</div>
 										<div class='bid_border_box'>
 											<div class='details' style="cursor:pointer;display: none;">Click to View Details</div>

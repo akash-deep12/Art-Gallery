@@ -1,9 +1,4 @@
-<?php
-
-    session_start();
-    include_once("header/header.php");
-
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,6 +7,7 @@
 
 	</head>
 	<body>
+	 <?php include_once("header/header.php"); ?>
 		<!-- Banner Area Starts-->
 		<div class="container-fluid   p-0 mt-4   banner-carousel">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
@@ -50,13 +46,13 @@
 			<div id="art-container">
 				<div class="row pb-2 ">
 					
-					<div class="art-link fit-image col-lg-6 col-md-6">
+					<div class="art-link fit-image col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<a href="showprod.php?id=1">
 							<img class="d-block w-100"src="admin/public/images/link1.jpg" alt="link-1" />
 							<h3>PAINTING</h3>
 						</a>
 					</div>
-					<div class="art-link col-lg-6" >
+					<div class="art-link col-lg-6 col-md-6 col-sm-6 col-xs-6" >
 						<a href="showprod.php?id=2">
 							<img class="d-block w-100" src="admin/public/images/link2.jpg" alt="link-2"/>
 							<h3>SCULPTURE</h3>
@@ -64,13 +60,13 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="art-link col-lg-6">
+					<div class="art-link col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<a href="showprod.php?id=3">
 							<img class="d-block w-100" src="admin/public/images/link3.jpg" alt="link-3"/>
 							<h3>PRINT MAKING</h3>
 						</a>
 					</div>
-					<div class="art-link col-lg-6">
+					<div class="art-link col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<a href="showprod.php?id=4">
 							<img class="d-block w-100" src="admin/public/images/link4.jpg" alt="link-4"/>
 							<h3>NEW MEDIA</h3>
@@ -86,8 +82,9 @@
 						<p class="p4"><b class="bold">Finished</b> Auctions</p>
 					</div>
 				</div>
-				<div class="row text-center ">
-					<div class="prods1 col-lg-2.5  offset-1.1">
+				<div class="container">
+				<div class="row mt-3">
+					<div class="prods1 col-lg-3 col-sm-12 col-md-6 m-auto p-0 text-center">
 						<div class="triangle">
 							<p class="p3">&#8377;85000</p>
 						</div>
@@ -96,7 +93,7 @@
 							<a href="##" class="link1">Ancient Painting</a>
 						</div>
 					</div>
-					<div class="prods col-lg-2.5 offset-1.5">
+					<div class="prods col-lg-3 col-sm-12 col-md-6 m-auto p-0  text-center">
 						<div class="triangle">
 							<p class="p3">&#8377;17000</p>
 						</div>
@@ -105,7 +102,7 @@
 							<a href="##" class="link1">Native Scenery</a>
 						</div>
 					</div>
-					<div class="prods col-lg-2.5 offset-1.5">
+					<div class="prods col-lg-3 col-sm-12 col-md-6 m-auto p-0  text-center">
 						<div class="triangle">
 							<p class="p3">&#8377;150000</p>
 						</div>
@@ -114,6 +111,7 @@
 							<a href="##" class="link1">Gotham Artwork</a>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>

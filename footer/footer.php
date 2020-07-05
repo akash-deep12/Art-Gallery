@@ -1,7 +1,7 @@
 
 <!-- Footer Area Start-->
 	<div class="container-fluid mt-2  "id="footer">
-		<div class="row col-sm-12 text-center ">
+		<div class="row text-center ">
 			<div class="footer-col col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<ul class="ul-item">
 					<h5>CATEGORIES</h5>

@@ -76,7 +76,7 @@ function showProfile(){
 	if (!empty($_SESSION)) {
 	echo"<div class='container mt-5 mb-5'>";
         echo"<div class='row'>";
-            echo"<div class='col-lg-8 offset-2'>";
+            echo"<div class='col-lg-8 col-md-12 col-sm-12'>";
                 echo"<div class='card'>";
                  echo"<div class='card-header'>";
                       echo"<strong>Profile Dashboard</strong>
@@ -129,7 +129,7 @@ function showProduct(){
 								});
 								</script><?php echo"</div>";
 				echo "<div class='center_prod_box'>";
-					echo "<div class='product_img'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='180' height='180' alt='' border='0'/></div>";
+					echo "<div class='product_img'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='230' height='180' alt='' border='0'/></div>";
 					echo "<div class='product_title'><a>".$row['prod_name']."</a></div>";
 					echo "<div class='prod_price'><span class='start-bid'>Category: </span> <span class='price text-info'>".$category[0]."</span><br/>
 				</div>";
@@ -169,7 +169,7 @@ function expiredProduct(){
 				echo"<span class='expiring text-danger ml-5'>Winner!!!!!!</span>";
 				echo "<div class='timer text-dark ml-2 mt-1'>".$winner[1]."</div>";
 				echo "<div class='center_prod_box'>";
-					echo "<div class='product_img'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='180' height='180' alt='' border='0'/></div>";
+					echo "<div class='product_img'><img class='img-responsive mt-4 ml-3' src='admin/public/images/".$row['prod_image']."' width='230' height='180' alt='' border='0'/></div>";
 					echo "<div class='product_title'><a>".$row['prod_name']."</a></div>";
 					echo "<div><a  style='font-size:15px;'class='text-info'href='bidlog.php?id=".$row['product_id']."'>Bid Log</a></div>";
 					echo "<div class='prod_price'><span class='start-bid'>Artist: </span> <span class='price text-info'>".$row['artist']."</span><br/>

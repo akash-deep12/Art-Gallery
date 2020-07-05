@@ -69,13 +69,13 @@ body{
 	margin:40px 0 60px 0!important;
 }
 .prods1{
-	width:290px;
-	margin:15px 0 0 75px;
+	width:290px!important;
+	margin:15px 0 0 0px;
 	border:1px solid black!important;
 }
 .prods{
 	width:290px;
-	margin:15px 0 0 75px;
+	margin:15px 0 0 0px;
 	border:1px solid black!important;
 }
 .triangle {
@@ -350,7 +350,7 @@ padding:0px; margin:0px;
 }
 .product_img_big{
 width:345px;
-max-height: 317px;
+max-height: 347px;
 padding:5px 10px 5px 10px;
 float:left;
 border: 1px solid black;
@@ -385,11 +385,11 @@ color: white;
 }
 span.expiring{
   float: left;
-  font-size: 19px;
+  font-size: 20px;
 }
 .timer{
   float: left;
-  font-size: 15px;
+  font-size: 17px;
 }
 /* ----------------------------------Artist Area Starts*/
 .artist_box{

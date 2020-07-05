@@ -25,25 +25,26 @@ require('class/artist.php');
 
              if($sql=mysqli_query($conn, "INSERT INTO products (prod_name, category_id, prod_description, prod_image, regular_price, date_posted, due_date, status, starting_bid, artist) VALUES('" . $title . "', '" . $category . "', '" .  $description  . "', '" . $file . "','" . $price . "','".date("Y/m/d")."','".$date."','0','".$sprice."','".$_SESSION['user_name']."')")){
                 move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$file);
-                 echo'<div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">Well done!</h4>
-                                <p><strong>Congratulations</strong>, you successfully Uploaded an auction.</p>
-                        </div>';
-
-
+                $_SESSION['success']="true";
+                echo"<script type='text/javascript'>
+                window.location.href = 'artists.php?id=2';
+               </script>";
+                }
+                else{
+                echo"There is an error";
+                }
              }       
-          }
-
-        }
+            }
 ?>
 <!DOCTYPE html>
 <head>
 	<title>Art Gallery</title>
 	<link rel="stylesheet" href="css/style.css"/>
-  <script src="js/jquery.countdown.min.js"></script>
+  
 </head>
 <body>
 <?php include_once("header/header.php");?>
+<script src="js/jquery.countdown.min.js"></script>
 	<div class="container">
 		<?php if (empty($_SESSION) or $_SESSION['account_type']=='Buyer'){?>
 			<div class="row    mt-3">
@@ -88,12 +89,21 @@ require('class/artist.php');
       </div>
     </div>
     <div class="container col-lg-10 mt-3">
+    <?php if(isset($_SESSION['success'])){ ?>
+      <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+          <p><strong>Congratulations</strong>, you successfully Uploaded an auction.</p>
+  </div>
+   <?php } ?>
+   <?php  if(isset($_SESSION['success'])){
+       unset($_SESSION['success']); 
+       } ?>
       <?php if (empty($_GET)) {
         echo"<div class='container text-center'>";
        echo"<h3>Successfully Logged</h3>";
        echo"<p class='text-danger'> Please click on sidebar links to perform actions</p>";
        echo"</div>";
-      } ?>
+        } ?>
      
 
       <?php if (!empty($_GET)) {
@@ -106,8 +116,9 @@ require('class/artist.php');
           # code...
         }
         if ($_GET['id']=='3') {?>
+        <div class="container">
           <div class="row">
-            <div class="col-lg-8 offset-2 mt-3">
+            <div class="col mt-3">
                 <div class="page-header">
                     <h2>Add Product</h2>
                 </div>
@@ -153,7 +164,8 @@ require('class/artist.php');
                     <input type="submit" class="btn btn-info mb-3" name="submit" value="Submit">
                 </form>
             </div>
-        </div>    
+        </div>  
+        </div>  
 
       <?php } if($_GET['id']=='4'){
         $art->expiredProduct();

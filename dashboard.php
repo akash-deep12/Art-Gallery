@@ -1,9 +1,6 @@
-<?php
- session_start();
- include_once("header/header.php");
+<?php session_start();
  include_once("dbconnection/db.php");
-   
-
+ 
     if(isset($_SESSION['user_id']) =="") {
         header("Location: login.php");
     }
@@ -12,12 +9,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
     <meta charset="UTF-8">
     <title>Art Gallery</title>
 </head>
 <body>
    
- 
+    <?php  include_once("header/header.php"); ?>
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-lg-8 col-md-12 col-sm-12">

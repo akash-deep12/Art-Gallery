@@ -3,8 +3,7 @@
 <html>
 	<head>
 		<title>Art Gallery</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
 		<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 		<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 		<script>

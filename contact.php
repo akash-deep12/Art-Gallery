@@ -96,10 +96,8 @@ if(isset($_POST["submit"]))
 <!DOCTYPE html>
 <html>
 	<head>
-		 <meta charset="UTF-8">
-		<title>Contact Us</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+	<title>Contact Us</title>
 	</head>
 	<body>
 		<?php include("header/header.php") ?>

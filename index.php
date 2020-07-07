@@ -3,8 +3,7 @@
 <html lang="en">
 	<head>
 		<title>Art Gallery</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	</head>
 	<body>
 	 <?php include_once("header/header.php"); ?>

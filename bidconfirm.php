@@ -1,8 +1,9 @@
-<!DOCTYPE>
+<?php require_once("functions.php"); ?>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>	
+		<title>Art Gallery</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -34,14 +35,15 @@
 						</div>
 						<div class="modal-body">
 							<?php
-							require("functions.php");
 							if(isset($_POST['submit'])){
 							$high = $_POST['high'];
 							$id = $_GET['id'];
 							$bidamount = $_POST['bidamount'];
 							$query = mysqli_query($conn,"SELECT * FROM products WHERE product_id = '$id'") or die (mysqli_error());
 							$prod = mysqli_fetch_array($query);
+							if(isset($_SESSION['user_id'])){
 							$userid = $_SESSION['user_id'];
+							}
 							$query2 = mysqli_query($conn,"SELECT * FROM login WHERE id = '$userid'") or die (mysqli_error());
 							$user = mysqli_fetch_array($query2);
 							$biddername = $user['id'];

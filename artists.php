@@ -38,9 +38,8 @@ require('class/artist.php');
 ?>
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>	
 	<title>Art Gallery</title>
-	<link rel="stylesheet" href="css/style.css"/>
-  
 </head>
 <body>
 <?php include_once("header/header.php");?>

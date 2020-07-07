@@ -1,17 +1,18 @@
-<?php include_once('header/header.php');
+<?php 
 include_once('dbconnection/db.php');
 include_once('class/artist.php');?>
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>	
 	<title>Art Gallery</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script src="js/jquery.countdown.min.js"></script>
 </head>
 <body>
+<?php include_once('header/header.php'); ?>
 	<div class="container">
 		<div class="row list-group mt-3">
-						<a href="" class="list-group-item list-group-item-action list-group-item-secondary active disabled" tabindex="-1" aria-disabled="true"  ><h4>Artist Products</h4></a>
+			<a href="" class="list-group-item list-group-item-action list-group-item-secondary active disabled" tabindex="-1" aria-disabled="true"  ><h4>Artist Products</h4></a>
 		</div>
 		<div class="row">
 			<?php $art= new artist();

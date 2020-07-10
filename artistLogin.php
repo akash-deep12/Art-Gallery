@@ -73,7 +73,7 @@ if (isset($_POST['login'])) {
 
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" value="" maxlength="8" required="">
+                        <input type="password" name="password" class="form-control" value="" maxlength="15" required="">
                         <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
                     </div>  
                     

@@ -18,7 +18,7 @@
         $target_file = $target_dir . basename($_FILES["file"]["name"]);
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         $error=1;
-        if (!preg_match("/^[a-zA-Z]+$/",$name)) {
+        if (!preg_match("/^[a-zA-Z' ]+$/",$name)) {
             $name_error = "Name must contain only alphabets and space";
             $error=0;
         }

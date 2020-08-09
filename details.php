@@ -127,7 +127,7 @@
 			
 								<div class="container col-lg-6  product_img_big">
 									<div class="img_big text-center">	
-										<a title='header=[Click to Bid] body=[&nbsp;] fade=[on]'><img class="img-fluid mt-3 mb-3" src='admin/public/images/<?php echo $row['prod_image'];?>' width='280' height='240' alt='' border='0' /></a>
+										<a title='header=[Click to Bid] body=[&nbsp;] fade=[on]'><img class="mt-3 mb-3" src='admin/public/images/<?php echo $row['prod_image'];?>' width='280' height='240' alt='' border='0' /></a>
 									</div>
 										<div class='container bid_border_box'>
 											<div class='bid text-responsive' style="cursor: pointer;">Click to Bid Now</div>

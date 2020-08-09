@@ -94,9 +94,6 @@ require('class/artist.php');
           <p><strong>Congratulations</strong>, you successfully Uploaded an auction.</p>
   </div>
    <?php } ?>
-   <?php  if(isset($_SESSION['success'])){
-       unset($_SESSION['success']); 
-       } ?>
       <?php if (empty($_GET)) {
         echo"<div class='container text-center'>";
        echo"<h3>Successfully Logged</h3>";

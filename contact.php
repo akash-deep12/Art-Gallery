@@ -70,7 +70,7 @@ if(isset($_POST["submit"]))
 		$mail->SMTPSecure = 'tls';							//Sets connection prefix. Options are "", "ssl" or "tls"
 		$mail->From = $_POST["email"];					//Sets the From email address for the message
 		$mail->FromName = $_POST["name"];				//Sets the From name of the message
-		$mail->AddAddress('ad952177@gmail.com', 'Name');		//Adds a "To" address
+		$mail->AddAddress('', 'Name');		//Adds a "To" address
 		$mail->AddCC($_POST["email"], $_POST["name"]);	//Adds a "Cc" address
 		$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
 		$mail->IsHTML(true);							//Sets message type to HTML				
